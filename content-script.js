@@ -20,30 +20,6 @@ const handleFromWeb = async (event) => {
 };
 window.addEventListener('message', handleFromWeb);
 
-
-const widgetTags = [
-    "livelike-alert",
-    "livelike-cheer-meter",
-    "livelike-text-ask",
-    "livelike-rich-post",
-    "livelike-emoji-slider",
-    "livelike-social-embed",
-    "livelike-video",
-    "livelike-video-alert",
-    "livelike-text-poll",
-    "livelike-image-poll",
-    "livelike-text-prediction",
-    "livelike-image-prediction",
-    "livelike-image-prediction-follow-up",
-    "livelike-text-prediction-follow-up",
-    "livelike-text-number-prediction",
-    "livelike-image-number-prediction",
-    "livelike-image-number-prediction-follow-up",
-    "livelike-text-number-prediction-follow-up",
-    "livelike-text-quiz",
-    "livelike-image-quiz",
-]
-
 chrome.runtime.onMessage.addListener( (request, sender, sendResponse) => {
     if(request.kind === "getResource"){    
         sendResponse({ ...obj });
