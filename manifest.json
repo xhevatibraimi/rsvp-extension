@@ -11,9 +11,15 @@
   },
   "permissions": [
     "activeTab",
-    "scripting",
-    "storage",
-    "tabs"
+    "scripting"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "web_accessible_resources.js"
+      ],
+      "matches": ["https://*/*"]
+    }
   ],
   "action": {
     "default_popup": "popup.html"
@@ -24,9 +30,9 @@
         "<all_urls>"
       ],
       "js": [
-        "rsvp-converter.js",
-        "background.js"
-      ]
+        "content-script.js"
+      ],
+      "run_at": "document_end"
     }
   ]
 }

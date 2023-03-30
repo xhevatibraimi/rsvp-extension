@@ -3,10 +3,39 @@
 
 <head>
   <title>RSVP Converter</title>
+  <link rel="stylesheet" href="./popup.css" />
 </head>
 
 <body>
-  <input type="button" id="button-convert" value="Convert" />
+  <div class="extension-header">
+    <div>
+      <img src="livelike.svg"/>
+    </div>
+    <div class="extension-buttons">
+      <button id="refresh">Refresh</button>
+      <button>Copy</button>
+    </div>
+  </div>
+  <div class="main-container">
+    <div>
+      <label for="client-id">Client ID</label>
+      <input type="text" id="client-id" name="client-id" disabled><br>
+    </div>
+    <div>
+      <label for="resource-type">Select Resource Type</label>
+      <select name="resource-type" id="resource-type">
+        <option value="Select" selected>Select</option>
+        <option value="Programs">Programs</option>
+        <option value="Chat Rooms">Chat Rooms</option>
+        <option value="Widgets">Widgets</option>
+        <option value="User">User</option>
+      </select>
+    </div>
+    
+    <div class="table-container">
+    </div>
+    
+  </div>
   <script src="./popup.js"></script>
 </body>
 

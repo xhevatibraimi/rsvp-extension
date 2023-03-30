@@ -1,0 +1,131 @@
+body{
+    width: 300px;
+    margin: 0;
+    background: #131524;
+    color: white;
+}
+
+.extension-header img{
+    max-width: 120px;
+    margin: 15px;
+}
+
+.extension-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.extension-buttons{
+    margin-right: 15px;
+    display: flex;
+}
+
+.extension-header button{
+   
+    background: #27BF9D;
+    border-radius: 4px;
+    border: none;
+    padding: 3px 6px;
+    margin-right: 3px;
+}
+
+.main-container{
+    background: #202233;
+    box-shadow: 0px -62.6432px 174.741px rgba(0, 0, 0, 0.51);
+    color: white;
+    border-radius: 6px;
+    padding: 10px 12px;
+}
+
+label, input, select{
+    display: block;
+}
+
+label{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #E5E6EE;
+}
+
+#client-id{
+    background: #2B2F42;
+    border-radius: 2px;
+    color: #E5E6EE;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    border: none;
+    width: 95%;
+    padding: 2px 6px;
+}
+
+select{
+    background: #1C1F2E;
+    border: 1px solid #A6A9B7;
+    border-radius: 4px;
+    color: #E5E6EE;
+    font-size: 12px;
+    width: 95%;
+    padding: 4px;
+}
+
+.resource-table{
+    margin-top: 10px;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+th{
+    text-align: left;
+    color: #90929E;
+    font-size: 10px;
+    line-height: 12px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 4px;
+}
+
+tbody tr{
+    background: #2B2F42;
+    border-radius: 8px;
+    margin-bottom: 4px;
+    border-radius: 8px;
+}
+
+td{
+    padding: 4px;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+tr:first-child(td){
+    border-radius: 4px 0 0 4px;
+}
+
+tr td:nth-child(2){
+    white-space: break-spaces;
+}
+
+tr:last-child(td){
+    border-radius: 0 4px 4px 0;
+}
+
+.resource-table::-webkit-scrollbar {
+    height: 8px;
+}
+ 
+.resource-table::-webkit-scrollbar-track {
+
+  background-color: #2e2e2e
+}
+ 
+.resource-table::-webkit-scrollbar-thumb {
+  background-color: #757575;
+  outline: 1px solid slategrey;
+  border-radius: 12px;
+}
